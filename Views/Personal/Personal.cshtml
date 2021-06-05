@@ -1,0 +1,83 @@
+
+@model IEnumerable<inicio.Models.Personal>
+
+<h2 style="color: white; margin-top:5%;margin-bottom:5%;">Lista Personal</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Añadir nuevo Personal</a>
+</p>
+<table class="table table-hover">
+     <thead class="thead-dark">
+        <tr>
+                <th scope="col">
+                    #
+                </th>
+                
+                <th scope="col">
+                    @Html.DisplayNameFor(model => model.Nombres)
+                </th>
+                <th scope="col">
+                    @Html.DisplayNameFor(model => model.Apellidos)
+                </th>
+                <th scope="col">
+                    @Html.DisplayNameFor(model => model.EMAIL)
+                </th>
+                <th scope="col">
+                    @Html.DisplayNameFor(model => model.DNI)
+                </th>
+                <th scope="col">
+                    @Html.DisplayNameFor(model => model.Celular)
+                </th>
+                <th scope="col">
+                    @Html.DisplayNameFor(model => model.Cargo)
+                </th>
+                 
+                 <th scope="col">
+                    @Html.DisplayNameFor(model => model.imagen)
+                </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th scope="row">
+                    @Html.DisplayFor(modelItem => item.id)  
+                </th>
+                
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nombres)
+                </td>
+                 <td>
+                    @Html.DisplayFor(modelItem => item.Apellidos)
+                </td>
+                 <td>
+                    @Html.DisplayFor(modelItem => item.EMAIL)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DNI)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Celular)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Cargo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.imagen)
+                </td>
+                <td>
+
+                <a href="/Personal/EditarPersonal/@item.id" class="btn btn-secondary">editar</a>
+                <form action="/Personal/BorrarPersonal" method="POST" class="d-inline-block">
+                <input type="hidden" name="id" value="@item.id"/>
+                    <button class="btn btn-danger"> borrar</button>
+
+                </form>
+                
+                  </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a asp-action="ExportarExcel" class="btn btn-primary">Exporta a Excel</a>

@@ -1,0 +1,48 @@
+@model IEnumerable<inicio.Models.Contacto>
+
+<h1 style="color: white; margin-top:5%;margin-bottom:5%;">Contacto</h1>
+
+
+<table class="table">
+    <thead>
+        <tr style="color: white;">
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Celular)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Detalles)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr style="color: white;">
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Celular)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Detalles)
+            </td>
+             <td>
+                <form action="/Contacto/BorrarContacto" method="POST" class="d-inline-block">
+                <input type="hidden" name="id" value="@item.Id"/>
+                <button class="btn btn-primary"> borrar</button>
+                </form>
+                </td>
+        </tr>
+}
+    </tbody>
+</table>

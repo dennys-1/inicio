@@ -159,6 +159,11 @@ namespace inicio.Controllers
         private bool ProformaExists(int id)
         {
             return _context.DataCarrito.Any(e => e.Id == id);
+        }  
+         public IActionResult Proceso()
+        {
+            var listContactos=_context.DataCarrito.ToList();
+            return View(listContactos);
         }
     }
 }

@@ -78,23 +78,32 @@
                                 <thead>
                                     
                                 </thead>
+                                 @{
+          Decimal total = 0;
+          
+         var contar = 0;
+          
+          
+          
+      }
+      @foreach (var item in Model){
+         <tr>
+            @{
+               total = total + item.Precio*item.Cantidad;
+               
 
+               contar++;
+               
+
+            }
+            
+         </tr>
+      }
+
+
+                             
                                 <tr>
-                                    <th colspan="4" scope="col" class="text-center" style="color: white;">SUB TOTAL :</th>
-                                    <th scope="col">
-                                        <p id="subtotal"></p>
-                                    </th>
-                                    <!-- <th scope="col"></th> -->
-                                </tr>
-                                <tr>
-                                    <th colspan="4" scope="col" class="text-center" style="color: white;">IGV :</th>
-                                    <th scope="col">
-                                        <p id="igv"></p>
-                                    </th>
-                                    <!-- <th scope="col"></th> -->
-                                </tr>
-                                <tr>
-                                    <th colspan="4" scope="col" class="text-center" style="color: white;">TOTAL :</th>
+                                    <th colspan="4" scope="col" class="text-center" style="color: white;">TOTAL :      @total</th>
                                     <th scope="col">
                                         <p id="total"></p>
                                     </th>

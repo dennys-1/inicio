@@ -165,5 +165,24 @@ namespace inicio.Controllers
             var listContactos=_context.DataCarrito.ToList();
             return View(listContactos);
         }
+         public IActionResult Editar(int id) {
+            var region = _context.DataCarrito.Find(id);
+            return View(region);
+        }
+
+        [HttpPost]
+        public IActionResult Editar(Proforma r) {
+            if (ModelState.IsValid) {
+                var region = _context.DataCarrito.Find(r.Id);
+                region.Cantidad = r.Cantidad;
+                _context.SaveChanges();
+                return RedirectToAction("EditarConfirmacion");
+            }
+            return View(r);
+        }
+
+        public IActionResult EditarConfirmacion() {
+            return View();
+        }
     }
 }

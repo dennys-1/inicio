@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UMf9B7dhXgQnbnUVFDm6ykkpn5NCqP1QVdfOnGwvcSV1gkx0HVX+trxIc6uMowcyjmDPqy+gNxSSNfEy1eGP2A==",
+  "dgSpecHash": "XwRTOWgKsUYay2njwKE/sVqlUy1lUgRvWF23XCeUQJEKkOdy2arMjIV5rVr5mEs+QdD4x8vQbaW5t1mxsLr9RA==",
   "success": true,
-  "projectFilePath": "D:\\Universidad San Martin de Porres\\2021-1\\ing sotfware\\PROYECTOWEB\\Productos\\inicio\\inicio.csproj",
+  "projectFilePath": "D:\\Universidad San Martin de Porres\\2021-1\\PROGRAMACION 1\\TIAVENENO\\inicio\\inicio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\epplus\\4.5.3.3\\epplus.4.5.3.3.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

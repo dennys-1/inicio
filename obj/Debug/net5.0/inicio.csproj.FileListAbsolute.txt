@@ -2420,7 +2420,6 @@ D:\Universidad San Martin de Porres\2021-1\PROGRAMACION 1\TIAVENENO\inicio\obj\D
 D:\Universidad San Martin de Porres\2021-1\PROGRAMACION 1\TIAVENENO\inicio\obj\Debug\net5.0\Razor\Views\Producto\Edit.cshtml.g.cs
 D:\Universidad San Martin de Porres\2021-1\PROGRAMACION 1\TIAVENENO\inicio\obj\Debug\net5.0\Razor\Views\Producto\Index.cshtml.g.cs
 D:\Universidad San Martin de Porres\2021-1\PROGRAMACION 1\TIAVENENO\inicio\obj\Debug\net5.0\Razor\Views\Proforma\Delete.cshtml.g.cs
-D:\Universidad San Martin de Porres\2021-1\PROGRAMACION 1\TIAVENENO\inicio\obj\Debug\net5.0\Razor\Views\Proforma\Edit.cshtml.g.cs
 D:\Universidad San Martin de Porres\2021-1\PROGRAMACION 1\TIAVENENO\inicio\obj\Debug\net5.0\Razor\Views\Proforma\Index.cshtml.g.cs
 D:\Universidad San Martin de Porres\2021-1\PROGRAMACION 1\TIAVENENO\inicio\obj\Debug\net5.0\Razor\Views\Reserva\CrearReserva.cshtml.g.cs
 D:\Universidad San Martin de Porres\2021-1\PROGRAMACION 1\TIAVENENO\inicio\obj\Debug\net5.0\Razor\Views\Reserva\Reserva.cshtml.g.cs
@@ -2859,3 +2858,6 @@ D:\Universidad San Martin de Porres\2021-1\ing sotfware\PROYECTOWEB\Productos\in
 D:\Universidad San Martin de Porres\2021-1\ing sotfware\PROYECTOWEB\Productos\inicio\obj\Debug\net5.0\ref\inicio.dll
 D:\Universidad San Martin de Porres\2021-1\ing sotfware\PROYECTOWEB\Productos\inicio\obj\Debug\net5.0\inicio.pdb
 D:\Universidad San Martin de Porres\2021-1\ing sotfware\PROYECTOWEB\Productos\inicio\obj\Debug\net5.0\inicio.genruntimeconfig.cache
+D:\Universidad San Martin de Porres\2021-1\PROGRAMACION 1\TIAVENENO\inicio\obj\Debug\net5.0\Razor\Views\Proforma\Editar.cshtml.g.cs
+D:\Universidad San Martin de Porres\2021-1\PROGRAMACION 1\TIAVENENO\inicio\obj\Debug\net5.0\Razor\Views\Proforma\EditarConfirmacion.cshtml.g.cs
+D:\Universidad San Martin de Porres\2021-1\PROGRAMACION 1\TIAVENENO\inicio\obj\Debug\net5.0\Razor\Views\Proforma\Proceso.cshtml.g.cs
